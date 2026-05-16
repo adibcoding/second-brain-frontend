@@ -1,0 +1,28 @@
+.profileContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 48px;
+}
+
+.imgProfile {
+    border-radius: 12px;
+    width: 40px;
+    height: auto;
+}
+
+.profileTitleText {
+    font-weight: var(--font-weight-semi-bold);
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: var(--font-color-primary);
+    font-size: 20px;
+}
+
+.profileDescText {
+    font-weight: var(--font-weight-regular);
+    color: var(--font-color-secondary);
+    line-height: 18.2px;
+    font-size: 13px;
+}
+

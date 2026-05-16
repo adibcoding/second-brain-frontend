@@ -1,0 +1,7 @@
+.actionSidebar {
+    display: flex;
+    gap: 16;
+    padding: 8px;
+    cursor: pointer;
+    align-items: center;
+}

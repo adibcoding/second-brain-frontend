@@ -1,0 +1,10 @@
+.actionButton {
+    background-color: #506258;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+}
+
+.actionButton:hover {
+    cursor: pointer;
+}
