@@ -1,0 +1,49 @@
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  width: clamp(240px, 25vw, 320px);
+  padding: 24px 16px;
+  background-color: #f6f3f2;
+  height: 100vh;
+  gap: 8px;
+}
+
+.buttonDesc {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 12px;
+  line-height: 14.4px;
+  letter-spacing: 0.6px;
+  color: white;
+}
+
+.buttonContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1em;
+}
+
+.actionSidebarText {
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  line-height: 24px;
+  color: #54675d;
+}
+
+.middleActionSidebar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bottomActionSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 24px;
+  border-top: 1px solid #C4C7C8;
+}
+
+
