@@ -1,0 +1,24 @@
+.mainContainer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.headerContentContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #FCF8F8;
+    min-height: 100vh;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 24px 10px 0px;
+    gap: 24px;
+}
+
+.contentContainer {
+    flex: 1;
+}

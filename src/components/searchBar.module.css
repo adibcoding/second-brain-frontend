@@ -1,0 +1,33 @@
+.searchBarContainer {
+  display: flex;
+  width: 256px;
+  background-color: #f6f3f2;
+  align-items: center;
+  border-radius: 12px;
+  gap: 12px;
+  padding: 10px 12px;
+}
+
+.form {
+  flex: 1;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  font-weight: var(--font-weight-regular);
+  font-size: 15px;
+  color: #434748;
+  background: transparent;
+  width: 100%;
+}
+
+.searchInput::-webkit-search-cancel-button {
+  display: none;
+}
+
+.searchInput::placeholder {
+  font-weight: var(--font-weight-regular);
+  font-size: 15px;
+  color: #434748;
+}

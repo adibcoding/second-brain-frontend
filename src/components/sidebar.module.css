@@ -6,6 +6,7 @@
   background-color: #f6f3f2;
   height: 100vh;
   gap: 8px;
+  position: sticky;
 }
 
 .buttonDesc {
