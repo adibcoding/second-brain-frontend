@@ -1,0 +1,63 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px;
+  border-radius: 8px;
+  background-color: #f6f3f2;
+  border: solid 1px #c4c7c8;
+  gap: 16px;
+}
+
+.cardTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardTitleText {
+  font-weight: var(--font-weight-medium);
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  color: var(--font-color-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardUpdatedAtText {
+  font-weight: var(--font-weight-regular);
+  font-size: 13px;
+  line-height: 18.2px;
+  color: var(--font-color-secondary);
+}
+
+.cardContentText {
+  font-family: var(--font-noto-serif);
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 28.8px;
+  color: var(--font-color-secondary);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cardTag {
+  padding: 3px 8px 3px 8px;
+  background-color: #e5e2e1;
+  border-radius: 12px;
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 12px;
+  line-height: 14.4px;
+  letter-spacing: 0.6px;
+  color: var(--font-color-secondary);
+  display: inline-block;
+}
+
+.cardTagContainer {
+  display: flex;
+  gap: 4px;
+}
