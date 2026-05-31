@@ -1,9 +1,11 @@
 import Header from "../components/header";
 import SearchBar from "../components/searchBar";
 import Sidebar from "../components/sidebar";
+import Card from "../components/card";
 import styles from "./page.module.css";
 
 export default function Page() {
+  const firstTags = ["design", "philosopy"];
   return (
     <>
       <div className={styles.mainContainer}>
@@ -31,6 +33,54 @@ export default function Page() {
             }
           ></Header>
           <div className={styles.contentContainer}>
+            <div className={styles.contentHeading}>
+              <h1 className={styles.contentHeaderTitleText}>Digital Garden</h1>
+              <p className={styles.contentHeaderSubText}>
+                Cultivating 42 ideas. Keep Growing
+              </p>
+            </div>
+            <div className={styles.contentCardContainer}>
+              <Card
+                title="The Philosophy of Minimalism in UI"
+                updatedAt="Just Now"
+                content="Minimalism isn't about removing elements until nothing is left; it's
+            about removing distractions until only the essential remains. In the
+            context of a digital garden, this means suppressing visual
+            noise—heavy shadows,…"
+                tags={firstTags}
+                gridColumn="1 / span 2"
+              ></Card>
+              <Card
+                title="The Philosophy of Minimalism in UI"
+                updatedAt="Just Now"
+                content="Minimalism isn't about removing elements until nothing is left; it's
+            about removing distractions until only the essential remains. In the
+            context of a digital garden, this means suppressing visual
+            noise—heavy shadows,…"
+                tags={firstTags}
+                gridColumn="1 / span 2"
+              ></Card>
+              <Card
+                title="The Philosophy of Minimalism in UI"
+                updatedAt="Just Now"
+                content="Minimalism isn't about removing elements until nothing is left; it's
+            about removing distractions until only the essential remains. In the
+            context of a digital garden, this means suppressing visual
+            noise—heavy shadows,…"
+                tags={firstTags}
+                gridColumn="1 / span 2"
+              ></Card>
+              <Card
+                title="The Philosophy of Minimalism in UI"
+                updatedAt="Just Now"
+                content="Minimalism isn't about removing elements until nothing is left; it's
+            about removing distractions until only the essential remains. In the
+            context of a digital garden, this means suppressing visual
+            noise—heavy shadows,…"
+                tags={firstTags}
+                gridColumn="1 / span 2"
+              ></Card>
+            </div>
           </div>
         </div>
       </div>
