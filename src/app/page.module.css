@@ -1,6 +1,7 @@
 .mainContainer {
   display: flex;
   align-items: flex-start;
+  outline: 2px solid red;
 }
 
 .headerContentContainer {
@@ -9,23 +10,32 @@
   flex: 1;
   background-color: #fcf8f8;
   height: 100vh;
+  outline: 2px solid green;
 }
 
 .headerContainer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 24px 10px 0px;
-  gap: 24px;
   border-bottom: 1px solid #c4c7c8;
+}
+
+@media (min-width: 900px) {
+  .headerContainer {
+    justify-content: flex-end;
+  }
 }
 
 .contentContainer {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 47px 152px 95px 152px;
+  padding-top: 47px;
+  padding-bottom: 95px;
   overflow-y: auto;
+  padding-left: clamp(16px, 8vw, 152px);
+  padding-right: clamp(16px, 8vw, 152px);
 }
 
 .contentHeaderTitleText {
@@ -51,6 +61,43 @@
   grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 1250px) {
+  .contentCardContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featuredCard {
+  grid-column: 1 / span 2;
+}
+
+@media (max-width: 1250px) {
+  .featuredCard {
+    grid-column: auto;
+  }
+}
+
 .contentHeading {
   margin-bottom: 48px;
+}
+
+.sidebarBurgerButton {
+  display: none;
+  margin-left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .sidebarBurgerButton {
+    display: block;
+  }
+}
+
+.searchBarContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
 }

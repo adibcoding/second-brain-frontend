@@ -5,7 +5,7 @@ interface CardProp {
   updatedAt?: string;
   content?: string;
   tags?: Array<string>;
-  gridColumn?: string;
+  className?: string;
 }
 
 export default function Card({
@@ -13,11 +13,11 @@ export default function Card({
   updatedAt,
   content,
   tags,
-  gridColumn,
+  className
 }: CardProp) {
   return (
     <>
-      <div className={styles.cardContainer} style={{ gridColumn }}>
+      <div className={`${styles.cardContainer} ${className ?? ""}`}>
         <div className={styles.cardTitleContainer}>
           <h3 className={styles.cardTitleText}>{title}</h3>
           <p className={styles.cardUpdatedAtText}>{updatedAt}</p>
