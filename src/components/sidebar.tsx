@@ -100,10 +100,16 @@ const bottomActions: Array<React.ReactNode> = [
   </>,
 ];
 
-export default function Sidebar() {
+interface SidebarProps {
+  isSidebarOpen: boolean;
+}
+
+export default function Sidebar({ isSidebarOpen }: SidebarProps) {
   return (
     <>
-      <div className={styles.sidebarContainer}>
+      <div
+        className={`${styles.sidebarContainer} ${isSidebarOpen ? styles.open : ""}`}
+      >
         <Profile></Profile>
         <Button
           children={
