@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Header from "../components/header";
 import SearchBar from "../components/searchBar";
 import Sidebar from "../components/sidebar";
@@ -5,17 +8,22 @@ import Card from "../components/card";
 import styles from "./page.module.css";
 
 export default function Page() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const firstTags = ["design", "philosopy"];
   return (
     <>
       <div className={styles.mainContainer}>
-        <Sidebar></Sidebar>
+        <div
+          className={`${styles.overlay} ${isSidebarOpen ? styles.open : ""}`}
+          onClick={() => setIsSidebarOpen(false)}
+        ></div>
+        <Sidebar isSidebarOpen={isSidebarOpen}></Sidebar>
         <div className={styles.headerContentContainer}>
           <Header
             children={
               <>
                 <div className={styles.headerContainer}>
-                  <button className={styles.sidebarBurgerButton}>
+                  <button className={styles.sidebarBurgerButton} onClick={ () => setIsSidebarOpen(true)}>
                     <svg
                       width="24"
                       height="24"
